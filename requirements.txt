@@ -1,9 +1,7 @@
-# AI OS Requirements - Windows 10 Compatible
-
 # Core Python Dependencies
-torch>=1.12.0,<2.0.0
-transformers>=4.21.0,<5.0.0
-spacy>=3.4.0,<4.0.0
+torch>=1.12.0,<2.0.0             # AI engine/PyTorch
+transformers>=4.21.0,<5.0.0      # NLP models
+spacy>=3.4.0,<4.0.0              # NLP engine
 numpy>=1.21.0,<2.0.0
 pandas>=1.3.0,<2.0.0
 scikit-learn>=1.1.0,<2.0.0
@@ -12,50 +10,59 @@ scikit-learn>=1.1.0,<2.0.0
 nltk>=3.7,<4.0.0
 textblob>=0.17.1
 
-# System Integration (Windows safe)
+# System Integration
 psutil>=5.9.0
 watchdog>=2.1.9
-# dbus-python is Linux-only; omit for Windows
-
-# Configuration & Data
-PyYAML>=6.0
-jsonschema>=4.7.0
+dbus-python>=1.2.18; sys_platform == "linux"   # Linux notifications (optional)
 
 # Scheduling & Background Tasks
 schedule>=1.1.0
 APScheduler>=3.9.0
 
-# HTTP/API
+# Configuration & Data
+PyYAML>=6.0
+jsonschema>=4.7.0
+
+# HTTP/API & Cloud
 requests>=2.28.0
 fastapi>=0.78.0
 uvicorn>=0.18.0
+boto3>=1.24.0    # AWS S3 cloud sync (optional, comment out if not using)
 
-# GUI Framework (Windows)
+# GUI & Dashboards
 PyQt5>=5.15.0
-# tkinter: built-in with Windows Python
+matplotlib>=3.5.0     # For resource graphs
+pyqtgraph>=0.12.0     # Optional, for fast resource graphs
+colorama>=0.4.5       # Terminal colors (Windows/Linux)
+
+# Encryption/Security
+cryptography>=40.0.0
 
 # Logging & Monitoring
 colorlog>=6.6.0
-colorama>=0.4.5  # For Windows terminal colors
 
-# Development & Testing Tools
+# Utilities & Plugins
+click>=8.1.0
+tqdm>=4.64.0
+python-dotenv>=0.19.0
+importlib-metadata>=4.11.0   # Plugins (Python <3.8 compatibility)
+
+# User Management
+passlib>=1.7.4          # User password hashing (optional)
+
+# Testing/Dev Tools
 pytest>=7.1.0
 pytest-cov>=3.0.0
 black>=22.6.0
 flake8>=5.0.0
 
-# Documentation
+# Documentation/Project
 sphinx>=5.1.0
 mkdocs>=1.3.0
-
-# Utilities
-click>=8.1.0
-tqdm>=4.64.0
-python-dotenv>=0.19.0
 
 # Windows-specific enhancements
 pywin32>=227; sys_platform == "win32"
 wmi>=1.5.1; sys_platform == "win32"
 
-# Optional: OpenAI API (for advanced features)
+# Optional: OpenAI API for LLM/chatbot features
 openai>=0.27.0
