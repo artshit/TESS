@@ -1,3 +1,5 @@
 ai-os-env/
 venv/
 env/
+__pycache__/
+*.pyc
