@@ -226,3 +226,8 @@ __pycache__/
 =======
 >>>>>>> 536070635a138d228aa56d6d9ef732d1570dc92f
 >>>>>>> 3115e64782de9e5c0302baebf3995aa4b3a8e45f
+
+ai-os-env/
+*.dll
+*.lib
+*.bin
