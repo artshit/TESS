@@ -6,7 +6,11 @@ from datetime import datetime
 import threading
 import time
 import json
+<<<<<<< HEAD
 from src.core.AIEngine import AIEngine
+=======
+from src.core.ai_engine import AIEngine
+>>>>>>> 3115e64782de9e5c0302baebf3995aa4b3a8e45f
 
 class AIShell:
     def __init__(self):

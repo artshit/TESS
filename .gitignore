@@ -135,7 +135,14 @@ celerybeat.pid
 *.sage.py
 
 # Environments
+<<<<<<< HEAD
 ai-os-env/
+=======
+<<<<<<< HEAD
+ai-os-env/
+=======
+>>>>>>> 536070635a138d228aa56d6d9ef732d1570dc92f
+>>>>>>> 3115e64782de9e5c0302baebf3995aa4b3a8e45f
 .env
 .envrc
 .venv
@@ -206,7 +213,16 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 3115e64782de9e5c0302baebf3995aa4b3a8e45f
 venv/
 env/
 __pycache__/
 *.pyc
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 536070635a138d228aa56d6d9ef732d1570dc92f
+>>>>>>> 3115e64782de9e5c0302baebf3995aa4b3a8e45f
