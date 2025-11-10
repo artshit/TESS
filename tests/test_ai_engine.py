@@ -1,4 +1,4 @@
-from src.core.ai_engine import AIEngine
+from src.core.AIEngine import AIEngine
 
 def test_simple():
     ai = AIEngine()

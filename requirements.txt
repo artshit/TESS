@@ -59,3 +59,10 @@ wmi>=1.5.1; sys_platform == "win32"
 
 # Optional: OpenAI API (for advanced features)
 openai>=0.27.0
+
+fastapi
+uvicorn
+requests
+pydantic
+python-dotenv
+psutil

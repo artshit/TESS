@@ -6,7 +6,7 @@ from datetime import datetime
 import threading
 import time
 import json
-from src.core.ai_engine import AIEngine
+from src.core.AIEngine import AIEngine
 
 class AIShell:
     def __init__(self):
